@@ -1,0 +1,23 @@
+// Importing Roboto and Indie Flower
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto+Mono:wght@100;300;400;700&display=swap");
+
+// custom variables here
+$primary: #4FB3A9;
+$secondary: #FFAF8A;
+
+$font-family-sans-serif: "Roboto Mono", "Helvetica Neue", "Lobster", Arial, sans-serif;
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "altlight": #F2EBFA,
+  "altdark": #522192
+);
+
+// merging the colors
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import boostrap
+@import '../node_modules/bootstrap/scss/bootstrap';
